@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1E4E8;
+    font-family: 'Kaisei Tokumin', serif;
+    margin: 0;
+}
+
+nav {
+    background-color: #CEB1BE;
+    padding: 10px;
+    justify-content: flex-end;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: black;
+    margin-left: 40px;
+    text-decoration: none;
+    position: relative;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    height: 100vh;
+    color: #fff;
+    background-image:url(https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1953&q=80);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center center;
+    position: relative;
+}
+
+header::after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 60px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+header p {
+    font-size: 30px;
+    margin: 0;
+}
+
+.project {
+    max-width: 250px;
+    margin: 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project-tile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 960px;
+    margin: 10px auto 0;
+     
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.project p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.bg-purple {
+    background-color: #B97375;
+    color: #fff;
+}
+
+section {
+    text-align: center;
+    padding: 40px;
+}
+
+section h2 {
+    margin: 0;
+}
+
+section p {
+    margin-top: 0;
+}
+
+.social-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+.social-ul a {
+    color: #fff;
+    font-size: 30px;
+    margin: 5 15px;
+
+}
+
+footer {
+    background-color: #CEB1BE;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width: 440px) {
+    section {
+        padding: 20px;
+    }
+}
+
+
+
+
